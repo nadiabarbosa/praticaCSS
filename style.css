@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Esteban&family=Inter:wght@600&display=swap');
+
+/* Para zerar os padrões que o HTML traz */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/*  */
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    background-color: #e5e5e5;
+}  
+
+.card {
+    margin: auto;
+    width: 576px;
+    height: 359px;
+    background: #fefefe;
+    border-radius: 16px;
+}
+
+.card-header {
+    width: 512px;
+    margin: auto;
+    padding-top: 33px;
+}
+
+.card-header__title {
+    color: #3d5a80;
+    float: left;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif ;  
+}
+
+.card-header__icon-close {
+    float: right;
+    cursor: pointer;
+}
+
+.card-content {
+    width: 512px;
+    margin: 48px auto;
+}
+
+.group-icon {
+    float: left;
+}
+
+.group-icon:nth-child(n+2):nth-child(-n+6){
+    margin-left: 16px;
+}
+
+.group-icon__icons {
+    width: 72px;
+    height: 72px;
+    background-color: rgba(157, 157, 157, 0.04);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.group-icon:nth-child(1) .group-icon__icons{
+    background-image: url(./assets/icon-chat.png);
+}
+
+.group-icon:nth-child(2) .group-icon__icons{
+    background-image: url(./assets/icon-telegram.png);
+}
+
+.group-icon:nth-child(3) .group-icon__icons{
+    background-image: url(./assets/icon-twitter.png);    
+}
+
+.group-icon:nth-child(4) .group-icon__icons{
+    background-image: url(./assets/icon-whatsapp.png);
+}
+
+.group-icon:nth-child(5) .group-icon__icons{
+    background: rgba(238, 108, 77, 0.08);
+    background-image: url(./assets/icon-email.png); /* esse código tem que ser aqui para que a imagem fique sobre o background*/
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+
+.group-icon:nth-child(6) .group-icon__icons{
+    background-image: url(/assets/icon-more.png);   
+}
+
+.group-icon__description {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #3d5a80;
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* aqui é a estiização do card-footer */
+.card-footer {
+    width: 512px;
+    margin: auto;
+    text-align: center;
+}
+
+.link-text {
+    font-family: 'Esteban', serif;
+    text-align: center;
+    color: rgba(61, 90, 128, 0.5);
+    margin-bottom: 20px;
+}
+
+.link-share {
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: 400;font-size: 14px;
+    color: rgba(61, 90, 128, 0.5);
+    width: 512px;
+    height: 53px;
+    background: rgba(157, 157, 157, 0.04);
+    border-radius: 16px;
+    padding-top: 18px;
+}
+
+.icon-share {
+    float: right;
+    margin-right: 16px;
+}
